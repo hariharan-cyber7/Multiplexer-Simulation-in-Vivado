@@ -43,7 +43,6 @@ Under "Simulation", modify the Run Time (e.g., set to 1000ns).<br>
 ```
 
 
-
 module mux4to1(I0,I1,I2,I3,S1,S2,Y);
     input I0,I1,I2,I3,S1,S2;
     output Y;
@@ -61,7 +60,6 @@ endmodule
 ```
 
 
-
 module mux4to1_df(A,B,C,D,S1,S0,Y);
     input A,B,C,D,S1,S0;
     output Y;
@@ -74,12 +72,10 @@ module mux4to1_df(A,B,C,D,S1,S0,Y);
 endmodule
 
 
-
 ```
 
 **4:1 MUX Behavioral Implementation:**
 ```
-
 
 
 module mux4to1_bhv(I,S,Y);
@@ -98,12 +94,10 @@ module mux4to1_bhv(I,S,Y);
 endmodule
 
 
-
 ```
 
 **4:1 MUX Structural Implementation:** <br>
 ```
-
 
 
 module mux2to1(A,B,S,Y);
@@ -127,9 +121,9 @@ endmodule
 
 ```
 
-**Testbench Implementation: 4:1 MUX Gate-Level Test bench Implementation**
+**Testbench Implementation:**
+**4:1 MUX Gate-Level Test bench Implementation**
 ```
-
 module mux4to1_tb;
     reg I0_t,I1_t,I2_t,I3_t,S1_t,S2_t;
     wire Y_t;
@@ -204,6 +198,7 @@ module mux4to1_df_tb;
     end
 endmodule
 ```
+
 **4:1 MUX Behavioral Test bench Implementation**
 ```
 module mux4to1_bhv_tb;
@@ -252,7 +247,8 @@ module mux4to1_str_tb;
      end
 endmodule
 ```
-**Sample Output: 4:1 MUX Gate-Level Implementation**
+**Sample Output:**
+**4:1 MUX Gate-Level Implementation**
 ```
 Time=00 | S1=0 S2=0 | Inputs: I0=1 I1=0 I2=1 I3=0
         | out_gate=1
@@ -274,6 +270,7 @@ Time=200 | s[1]=1 s[0]=0 | Inputs: a=1 b=0 c=1 d=0
 Time=300 | s[1]=1 s[0]=1 | Inputs: a=1 b=0 c=1 d=0
         | out_dataflow=0
 ```
+
 **4:1 MUX Behavioral Implementation**
 ```
 Time=00 | S[1]=0 S[0]=0 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
@@ -298,7 +295,20 @@ Time=300 | S[1]=1 S[0]=1 | Inputs: I[0]=1 I[1]=0 I[2]=1 I[3]=0
 ```
 **Output waveform** <br>
 **Gate-Level:**
-<img width="1915" height="1078" alt="image" src="https://github.com/user-attachments/assets/147bc2f5-017f-4ba9-a507-44745f02af0e" />
+<img width="1920" height="1200" alt="Screenshot 2025-09-02 160454" src="https://github.com/user-attachments/assets/a5fb9480-30ed-4e30-a366-2b45cdcf0b9c" />
+
+
+**Data Flow:**
+<img width="1919" height="1198" alt="Screenshot 2025-09-02 161135" src="https://github.com/user-attachments/assets/f1c7f1dd-f67b-4f45-b77f-87ce8c59b26b" />
+
+**Behavioral:**
+<img width="1919" height="1194" alt="Screenshot 2025-09-02 161607" src="https://github.com/user-attachments/assets/16237e66-cb2b-45d0-b427-d5d8c47decaf" />
+
+
+**Structural:**
+<img width="1920" height="1200" alt="Screenshot 2025-09-02 162903" src="https://github.com/user-attachments/assets/edfb9539-63dd-4fd6-a3a1-025e30b29fd5" />
+
+<
 
 
 **Conclusion:** <br>
